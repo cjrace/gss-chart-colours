@@ -62,7 +62,7 @@ If you want to label the lines with text in the same colour, the blue and the da
 
 ### Line chart example
 
-![](/images/line_chart_ons.png)
+![](/images/line_chart_ons.png) <!-- Hannah Thomas: This is from the ONS data vis GitHub – I think it matches the hex codes above. But the text in the light blue fails accessibility regs. -->
 
 If there is no order, for example each line represents a different gender, you should use different colours.
 
@@ -73,6 +73,9 @@ Colour palette for line charts where there is no order to the categories represe
 - Third line colour: Teal #118C7B
 
 [no example of this as line chart]
+
+
+<!-- Hannah Thomas: Nothing to go on here really. The grey lines would still need to be accessible. Should we use the orange highlight colour for line highlight? -->
 
 If you wish to use more than 3 lines we would suggest picking one of the categories to focus on and putting all the others to a grey.
 

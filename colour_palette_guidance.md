@@ -1,4 +1,4 @@
-# Colour palette for charts made by the Government Analysis Function
+# DRAFT: Colour palette for charts made by the Government Analysis Function
 
 ## Aim
 

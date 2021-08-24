@@ -118,6 +118,9 @@ While we have suggested a standard palette to follow here, there may be reasons 
 
 [Tables and charts on GOV.UK](https://www.gov.uk/government/publications/examples-of-visual-content-to-use-on-govuk/examples-of-visual-content-to-use-on-govuk)
 
+### Guidance made by DHSC
+[R package to make accessible plots using DHSC colour palettes](https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2FDataS-DHSC%2FDHSC_colours&data=04%7C01%7CHannah.D.Thomas%40ons.gov.uk%7C6accbceea6b0444aeeec08d966d693fb%7C078807bfce824688bce00d811684dc46%7C0%7C0%7C637653894773954444%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&sdata=PPpowqfAhZjBxHXkOwfmNcu8neISJh6LwyxRxNn%2Bkp0%3D&reserved=0)
+
 ### Guidance on R
 
 https://rdrr.io/cran/ggthemes/man/colorblind.html

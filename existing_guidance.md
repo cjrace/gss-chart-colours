@@ -30,11 +30,3 @@ https://rdrr.io/cran/ggthemes/man/colorblind.html
 
 https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
 
-
-## Other things to consider
-
-- Using colours to connect information  (Style.ONS advice) – This can get more complicated if a team wants to use one colour for adults, one for children, one for men, one for women throughout a publication. May lead to people wanting to use tints of the same colour. 
-- Departments have their own colour schemes and may be attached to departmental branding.
-<!-- Cam Race: I think both of the above should be handled by a little bit of guidance around making custom palettes, and pointing to tools to help analysts in doing this, have started a section above -->
-- The guidance on ONS seems to suggest it is OK to use line charts with lots of lines, which maybe wouldn’t be considered best practice now?
-<!-- Cam Race: I'd agree that is isn't best practice and think what we have is fine for now -->

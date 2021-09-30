@@ -100,6 +100,11 @@ While we have suggested a standard palette to follow here, there may be reasons 
 
 <!-- Cam Race: What tools do we want to point analysts to to easily test the above with? https://color.adobe.com/create/color-accessibility can cover contrast and colour blindness when the site is working. There's also a couple of R packages for contrast ratio, we could look to pick those up and expand on them? -->
 
+## Other things to consider
 
-
+- Using colours to connect information  (Style.ONS advice) – This can get more complicated if a team wants to use one colour for adults, one for children, one for men, one for women throughout a publication. May lead to people wanting to use tints of the same colour. 
+- Departments have their own colour schemes and may be attached to departmental branding.
+<!-- Cam Race: I think both of the above should be handled by a little bit of guidance around making custom palettes, and pointing to tools to help analysts in doing this, have started a section above -->
+- The guidance on ONS seems to suggest it is OK to use line charts with lots of lines, which maybe wouldn’t be considered best practice now?
+<!-- Cam Race: I'd agree that is isn't best practice and think what we have is fine for now -->
 

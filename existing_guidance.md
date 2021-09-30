@@ -30,8 +30,6 @@ https://rdrr.io/cran/ggthemes/man/colorblind.html
 
 https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
 
-----------------
-[End of guidance? Everything below seems like notes to ourselves]
 
 ## Other things to consider
 

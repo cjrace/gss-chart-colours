@@ -1,16 +1,17 @@
 # DRAFT: Colour palette for charts made by the Government Analysis Function
 
-## Aim
+## Aims
 
-To provide members of the Government Analysis Function (AF) with a colour palette for basic charts that is as accessible as possible.  
+1. To provide members of the Government Analysis Function (AF) with an example colour palette for basic charts that is accessible. 
+2. To provide resources and guidance for analysts who wish to test their own colour palettes for accessibility.
 
 The AF covers everyone who produces analysis in government. 
 
-Colours are given in hex code. RGB, CYMK and Pantone versions should also be included. <!-- Cam Race: These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
+Colours are given in hex code. RGB, CYMK and Pantone versions should also be included once the examples have been agreed upon. <!-- Cam Race: These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
 
 ## Note on accessibility
 
-When providing a colour palette for charts and graphics we aim to provide colours that have enough contrast with the white background and enough contrast between adjacent colours. 
+When designing a colour palette for charts and graphics we aim to provide colours that have enough contrast with the white background and enough contrast between adjacent colours. 
 
 This is because all content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
 
@@ -22,31 +23,58 @@ The relevant success criterion for colours in graphs is:
 >
 >Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
-However, in more complex charts, it is not possible for colours to have enough contrast with each other and with the white background. We are happy to argue that when this occurs the presentation is essential to the information being conveyed.
+However, in more complex charts, it is not always possible for colours to have enough contrast with each other and with the white background. We are happy to argue that when this occurs the presentation is essential to the information being conveyed.
 
 All data used to build charts from should be accessible already through other means as well, e.g. as an accompanying table, or a download file that users are pointed towards. This also helps with ensuring that the data itself is accesible.
+
+## Example colour palette
+
+Based on the GDS colours - https://design-system.service.gov.uk/styles/colour/. The original orange did not have a 3:1 ratio against white (#ffffff) so I've darkened that slighty to meet the guidelines.
+
+- First series colour: Blue #1d70b8
+- Second series colour: Orange #F46A25 (GDS original: #f47738)
+- Third series colour: Pink #d53880
+- Fourth series colour: Turquoise #28a197
+
+Contrast ratios all meet 3:1 against white. They don't meet 3:1 against each other, though I don't think there is a solution that maintains the 3:1 against white, and 3:1 between colours, as well as being colour blind friendly and working in black and white.
+
+|  | White | Blue | Orange | Pink | Turqouise |
+| --- | --- | --- | --- | --- | --- |
+| White | 0 | 5.16 | 3.02 | 4.46 | 3.16 |
+| Blue | 5.16 | 0 | 1.7 | 1.15 | 1.63 |
+| Orange | 3.02 | 1.7 | 0 | 1.47 | 1.04 |
+| Pink | 4.46 | 1.15 | 1.47 | 0 | 1.4 |
+| Turquoise | 3.16 | 1.63 | 1.04 | 1.4 | 0 |
+
+Source: https://webaim.org/resources/contrastchecker/
+
+Colour blindness checked using - https://color.adobe.com/create/color-accessibility
+
+Black and white checked using -
+
 
 ## Bar charts 
 
 For standard vertical and horizontal bar charts, use a single colour across all bars. We recommend the GDS Blue #1d70b8
 
-[Needs an example]
+![](/images/bar_gds.png)
 
 Clustered and stacked bar charts should have a maximum of 4 series. <!-- Hannah Thomas: Have made this up – we should state a maximum though? Cam Race: I did a quick check across DfE and we tend to go up to 6 in series, though I agree we should suggest a limit, and happy for that to be 4 -->
 
 - First series colour: Blue #1d70b8
-- Second series colour: Orange #f47738
+- Second series colour: Orange #F46A25
 - Third series colour: Pink #d53880
 - Fourth series colour: Turquoise #28a197
 
 If you want to label bars with text you should use white text on Blue, and Pink and black text on these colours: Orange and Turquoise. Labels should ideally be 18pt and above, or 14pt bold and above.
 
-### Example - grouped bar charts
+### Example - grouped bar chart
 
-![](/images/grouped_bar_ons.png) [Need to update example]
-### Example - stacked bar charts
+![](/images/grouped_bar_gds.png)
 
-![](/images/stacked_bar_ons.png) [Need to update example]
+### Example - stacked bar chart
+
+![](/images/stacked_bar_gds.png)
 
 ## Line charts
 
@@ -57,7 +85,7 @@ Line charts should be ideally limited to a maximum of 4 lines. <!-- Hannah Thoma
 If there is no order, for example each line represents a different gender, you should use different colours.
 
 - First series colour: Blue #1d70b8
-- Second series colour: Orange #f47738
+- Second series colour: Orange #F46A25
 - Third series colour: Pink #d53880
 - Fourth series colour: Turquoise #28a197
 
@@ -93,16 +121,18 @@ Colour palette for line chart with highlighted line:
 
 While we have suggested a standard palette to follow here, there may be reasons for diverging from this. The key factors to consider when building a custom palette for charts are:
 
-- Does it work in black and white 
-- Contrast ratios of at least 3:1 with the white background (graphical components)
-- Colour blindness compatibility between colours 
+- Contrast ratios of at least 3:1 with the white background (graphical components) - lots of tools, suggest webaim?
+- Does it work in black and white - don't know how to test this best?
+- Colour blindness compatibility between colours - best tested using the adobe thing?
 <!-- Cam Race: any more? -->
+
+## Tools for assessing accessibility of colour palettes
 
 <!-- Cam Race: What tools do we want to point analysts to to easily test the above with? https://color.adobe.com/create/color-accessibility can cover contrast and colour blindness when the site is working. There's also a couple of R packages for contrast ratio, we could look to pick those up and expand on them? -->
 
 ## Other things to consider
 
-- Using colours to connect information  (Style.ONS advice) – This can get more complicated if a team wants to use one colour for adults, one for children, one for men, one for women throughout a publication. May lead to people wanting to use tints of the same colour. 
+- Using colours to connect information  (Style.ONS advice) – This can get more complicated if a team wants to use one colour for adults, one for children, one for men, one for women throughout a publication. May lead to people wanting to use tints of the same colour. <!-- Move away from suggesting this and try to keep it simple? -->
 - Departments have their own colour schemes and may be attached to departmental branding.
 <!-- Cam Race: I think both of the above should be handled by a little bit of guidance around making custom palettes, and pointing to tools to help analysts in doing this, have started a section above -->
 - The guidance on ONS seems to suggest it is OK to use line charts with lots of lines, which maybe wouldn’t be considered best practice now?

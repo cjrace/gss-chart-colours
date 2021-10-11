@@ -31,21 +31,21 @@ Colour is not the only means of distinguishing between series, and you should co
 
 We have developed an example colour palette that you can use for basic charts to meet the accessibility guidelines. This assumes you are making charts on a white background.
 
-This palette is based on the GDS colours - https://design-system.service.gov.uk/styles/colour/ - with a couple of variations. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly. The GDS dark blue was too close to the purple for colour blind distinction. This dark blue has also been adjusted alongside the dark grey to give 3:1 contrast between each of them, and the background.
+This palette is based on the GDS colours - https://design-system.service.gov.uk/styles/colour/ - with a couple of variations. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly. The GDS dark blue was too close to the purple for colour blind distinction. This dark blue has also been adjusted alongside the dark grey to give 3:1 contrast between each of them, and the background. The GDS bright purple has also been tweaked to work for colour blindness and have at least a 3:1 contrast with turquoise.
 
-The ordering of the colours is particularly important for charts like stacked bars where colours will be adjacent.
+### Example series
 
-### Categorical series
+The ordering of the colours is particularly important for charts like stacked bars where colours will be adjacent. This example ensures that neighbouring series maintain a contrast ratio of 3:1 and are accessible with colour blindness.
 
 | Series | Colour | Hex | RGB | |
 | ---- | ---- | ---- | ---- | ----| 
 | 1 | Dark blue* | #12436D | | |
 | 2 | Orange* | #F46A25 | | |
-| 3 | Purple | #4C2C92 | | |
-| 4 | Turqouise | #28A197 | | |
-| 5 | Pink | #D53880 | | |
+| 3 | Bright purple* | #801650 | | |
+| 4 | Turquoise | #28A197 | | |
+| 5 | Purple | #4C2C92 | | |
 
-[insert series image]
+![](/images/adjacent_series_image.png)
 
 ### Focussed series
 
@@ -54,7 +54,7 @@ The ordering of the colours is particularly important for charts like stacked ba
 | 1 | Dark blue* | #12436D | | |
 | 2 | Dark grey* | #919397 | | |
 
-[insert series image]
+![](/images/focussed_series_image.png)
 
 *Shade does not directly match the GDS palette.
 
@@ -64,13 +64,14 @@ Any of the colours can be used for text labels on a white background, and can be
 
 #### Contrast ratios
 
-|  | White | Dark blue | Orange | Purple | Turqouise | Pink |
+|  | White | Dark blue | Orange | Bright purple | Turqouise | Purple |
 | --- | --- | --- | --- | --- | --- | ----|
-| White | - | 10.24 | 3.02 | 10.08 | 3.16 | 4.46 |
-| Dark blue | - | - | 3.38| 1.01 | 3.23 | 2.29 |
-| Orange | - | - | - | 3.32 | 1.04 | 1.47 |
-| Purple | - | - | - | - | 3.18 | 2.25 | 
-| Turquoise | - | - | - | - | - | 1.4 |
+| White | - | 10.24 | 3.02 | 9.77 | 3.16 | 10.08 |
+| Dark blue | - | - | 3.38| 1.04 | 3.23 | 1.01 |
+| Orange | - | - | - | 3.22 |  1.04 | 3.32 |
+| Bright purple | - | - | -| -| 3.08 | 1.04 |
+| Turquoise | - | - | - | - | - | 3.08 |
+
 
 | | White | Dark blue | Grey |
 | ---- |---- |---- |----|
@@ -85,22 +86,24 @@ Colour blindness source: https://color.adobe.com/create/color-accessibility
 
 ### Simple bar charts
 
-For standard vertical and horizontal bar charts, use a single colour across all bars. For this we would suggest using the first series from the palette, dark blue # .
+For standard vertical and horizontal bar charts, use a single colour across all bars. For this we would suggest using the first series from the palette, dark blue, as this has the highest contrast ratio with a white background.
 
-![](/images/bar_gds.png)
-[update example]
+[](/images/bar_gds.png)
+[needs example]
 
 ### Clustered bar charts
 
 Clustered bar charts should ideally kept below 5 in a series. We recommend using the example colour palette in the order above. All bars should have white space around them to ensure a consistent 3:1 contrast ratio with adjacent colours.
 
-![](/images/grouped_bar_gds.png)
+[](/images/grouped_bar_gds.png)
+[needs example]
 
 ### Stacked bar charts
 
 Stacked bar charts present a greater challenge for accessibility as they rely heavily on colour contrast. For this reason it is important that you follow the order of the colour palette to maintain a 3:1 constrast ratio between adjacent colours.
 
-![](/images/stacked_bar_gds.png)
+[](/images/stacked_bar_gds.png)
+[needs example]
 
 ## Line charts
 
@@ -116,9 +119,7 @@ Example colours for line chart with highlighted line:
 - Colour for background lines: Dark grey #505a5f
 - Highlight colour for the category to focus on: Blue #1d70b8
 
-[need an example for this]
-
-<!-- Would we want to add a section for maps, or just leave it for now and get a basic version published, then look at adding something for maps based around what colorbrewer have? -->
+[needs example]
 
 ## Alternative colours
 

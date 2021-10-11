@@ -2,7 +2,15 @@
 
 ## Background
 
-Making data visualisations accessible is important, however the relevant legislation and guidance is unclear and requires analysts to spend a lot of time doing their own research.
+Making data visualisations accessible is important, however the relevant legislation and guidance is unclear and requires analysts to spend a lot of time doing their own research. All content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
+
+The relevant success criterion for colours in graphs is: 
+
+>Success Criterion 1.4.11 Non-text Contrast: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
+>
+> ### Graphical Objects
+>
+>Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
 There is currently a lack of central guidance around building accessible charts as a statistician in government. This is a problem we've had analysts request we address in DfE and we've heard similar noises from elsewhere. We'd like to work together to provide centralised advice to encourage consistency across the entire GSS and prevent unnecessary duplication of the same work.
 
@@ -30,13 +38,16 @@ The suggest colour palette is as follows:
 
 | Series | Colour | Hex | RGB | |
 | ---- | ---- | ---- | ---- | ----| 
-| 1 | Dark blue | #12436D | | |
-| 2 | Orange | #F46A25 | | |
-| 3 | Purple | #4C2C92 | | |
-| 4 | Turqouise | #28A197 | | |
-| 5 | Pink | #D53880 | | |
+| 1 | Dark blue* | #12436D | | |
+| 2 | Orange* | #F46A25 | | |
+| 3 | Bright purple* | #801650 | | |
+| 4 | Turquoise | #28A197 | | |
+| 5 | Purple | #4C2C92 | | |
 
-[insert series image]
+Colour wheel and colour blind versions:
+
+![](/images/main_series_colour_wheel.png)
+
 
 #### Focussed series
 
@@ -45,17 +56,17 @@ The suggest colour palette is as follows:
 | 1 | Dark blue | #12436D | | |
 | 2 | Dark grey | #919397 | | |
 
-[insert series image]
+![](/images/focussed_series_image.png)
 
 #### Contrast ratios
 
-|  | White | Dark blue | Orange | Purple | Turqouise | Pink |
+|  | White | Dark blue | Orange | Bright purple | Turqouise | Purple |
 | --- | --- | --- | --- | --- | --- | ----|
-| White | - | 10.24 | 3.02 | 10.08 | 3.16 | 4.46 |
-| Dark blue | - | - | 3.38| 1.01 | 3.23 | 2.29 |
-| Orange | - | - | - | 3.32 | 1.04 | 1.47 |
-| Purple | - | - | - | - | 3.18 | 2.25 | 
-| Turquoise | - | - | - | - | - | 1.4 |
+| White | - | 10.24 | 3.02 | 9.77 | 3.16 | 10.08 |
+| Dark blue | - | - | 3.38| 1.04 | 3.23 | 1.01 |
+| Orange | - | - | - | 3.22 |  1.04 | 3.32 |
+| Bright purple | - | - | -| -| 3.08 | 1.04 |
+| Turquoise | - | - | - | - | - | 3.08 |
 
 | | White | Dark blue | Grey |
 | ---- |---- |---- |----|
@@ -68,7 +79,8 @@ Source: https://webaim.org/resources/contrastchecker/
 
 The proposed accessibility considerations that the guidance outlines for meeting need 2. are:
 
-    - Contrast ratio of 3:1 with white background
+    - Contrast ratio of 3:1 with white background for all colours
+    - Contrast ratio of 3:1 between adjacent colours
     - Works for the three main types of colour blindness (Deuteranopia, Protanopia and Tritanopia)
     - Works in greyscale / black and white
 
@@ -82,7 +94,7 @@ I've only checked this for black and white by viewing a print preview of one of 
 
 ## Questions for the group
 
-1. Any objections to the propsal?
+1. Any objections to the proposal / needs we're aiming to meet?
 4. Are there any other accessibility considerations we should be highlighting in the guidance?
 2. Any objections to the proposed colours?
 3. What codes do analysts use? Hex, RGB, CMYK, Pantone?

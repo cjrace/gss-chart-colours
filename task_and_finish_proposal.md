@@ -42,7 +42,7 @@ We are proposing an accessible colour palette for use with basic charts, alongsi
 
 The proposed colour palette is based on the [GDS colours suggested for digital services](https://design-system.service.gov.uk/styles/colour/). These are used in the GOV.UK design scheme. This is an established and central set of colours for use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the required level of contrast for adjacent colours.  
 
-The example given suggests a series of five colours. These all have a 3:1 contrast ratio with a white background. It is deemed colourblind safe and it works in black and white.
+The example given suggests a series of five colours. These all have a 3:1 contrast ratio with a white background. It is deemed colourblind safe and it works in grayscale.
 
 When considering contrast ratios between adjacent colours, some pairings in this example do have the required contrast ratio of at least 3:1. However, it has not be possible to develop a series where every colour has a contrast ratio of 3:1 with all other colours, while also being accessible for colour blindess. 
 
@@ -91,7 +91,7 @@ Colour wheel and colour blind versions:
 
 Source: [WebAim contrast checker](https://webaim.org/resources/contrastchecker/)
 
-### Accesibility considerations
+### Accessibility considerations
 
 The following are true for this colour palette: 
 
@@ -100,9 +100,9 @@ The following are true for this colour palette:
     - Works for the three main types of colour blindness (Deuteranopia, Protanopia and Tritanopia)
     - Works in greyscale/black and white
 
-### Tools to test colour ratios 
+## Tools to test colour ratios 
 
-From my research the best way to test colour ratios is the [WebAim contrast checker website](https://webaim.org/resources/contrastchecker/).
+We think the best way to test colour ratios is the [WebAim contrast checker website](https://webaim.org/resources/contrastchecker/).
 
 For colour blindness, there is an [Adobe tool](https://color.adobe.com/create/color-accessibility) that lets you check up to five colours at a time. 
 This can be temperamental but it is the only tool that gives a clear pass or fail with regards to the accessibility regulations after converting colours to their colour blind equivalents.

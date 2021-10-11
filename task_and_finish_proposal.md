@@ -12,7 +12,7 @@ The relevant success criterion for colours in graphs is:
 >
 >Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
-There is currently a lack of central guidance around building accessible charts as a statistician in government. This is a problem we've had analysts request we address in DfE and we've heard similar noises from elsewhere. We'd like to work together to provide centralised advice to encourage consistency across the entire GSS and prevent unnecessary duplication of the same work.
+There is currently a lack of central guidance around building accessible charts as a statistician in government and it's a problem we've had analysts request we address. We'd like to work together to provide centralised advice to encourage consistency across the entire GSS and prevent unnecessary duplication of the same work.
 
 ## Aims
 
@@ -26,7 +26,7 @@ There are two needs that we hope to satisfy:
 
 To satisfy these I have prepared an update to the GSS best practice guidance that proposes an example accessible colour palette and guidance for analysts to consider accessibility and test for it when they are making their own palettes. This is based on an earlier document by Hannah Thomas. 
 
-The proposed colour palette to achieve need 1. is based on the GDS colours that are used in the .gov.uk design scheme.This is an established and central set of colours to use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the guidelines for accessibility. These example is suggested for simplicity and ease, covering the vast majority of cases and providing a simple starting point. 
+The proposed colour palette to achieve need 1. is based on the GDS colours suggested for digital services, and are those that are used in the .gov.uk design scheme -  https://design-system.service.gov.uk/styles/colour/. This is an established and central set of colours to use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the guidelines for accessibility. These example is suggested for simplicity and ease, covering the vast majority of cases and providing a simple starting point. 
 
 The example given suggests a series of five colours that maintain a 3:1 contrast ratio with a white background, is deemed colourblind safe and works in black and white. The contrast ratio between adjacent series is at least 3:1, though it has not be possible to develop a series where every colour has a contrast ratio of 3:1 while also being accessible for colour blindess.
 
@@ -103,8 +103,9 @@ I've only checked this for black and white by viewing a print preview of one of 
 
 ## Next steps
 
-- Agree on purpose and scope of group
-- Agree on accessibility considerations for alternative colours
-- Agree upon example palette
-- Agree on best tools to reccomend for each accessibility consideration
-- Share finalised guidance for any further feedback before publishing
+Each take this away and get feedback on:
+- Accessibility considerations for alternative colours
+- Example colour palette
+- Best tools to reccomend for each accessibility consideration
+
+We'll then work to update this according to feedback provided and aim to agree a finalised version for sharing more widely and updating the current guidance.

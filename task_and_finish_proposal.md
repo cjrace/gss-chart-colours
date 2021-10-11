@@ -16,7 +16,7 @@ All content published on public sector websites must legally meet all the A stan
 
 When it comes to colours used in data visualisations, the relevant success criterion is: 
 
->(Success Criterion 1.4.11 Non-text Contrast)[https://www.w3.org/TR/WCAG21/#non-text-contrast]: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
+>[Success Criterion 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast): The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
 >
 > ### Graphical Objects
 >
@@ -40,7 +40,7 @@ We have anecdotal evidence that suggests some users still print analytical and s
 
 We are proposing an accessible colour palette for use with basic charts, alongside guidance for analysts who wish to test for accessibility when making their own palettes. 
 
-The proposed colour palette is based on the (GDS colours suggested for digital services)[https://design-system.service.gov.uk/styles/colour/]. These are used in the GOV.UK design scheme. This is an established and central set of colours for use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the required level of contrast for adjacent colours.  
+The proposed colour palette is based on the [GDS colours suggested for digital services](https://design-system.service.gov.uk/styles/colour/). These are used in the GOV.UK design scheme. This is an established and central set of colours for use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the required level of contrast for adjacent colours.  
 
 The example given suggests a series of five colours. These all have a 3:1 contrast ratio with a white background. It is deemed colourblind safe and it works in black and white.
 
@@ -89,7 +89,7 @@ Colour wheel and colour blind versions:
 | White | - | 3.32 | 3.07 |
 | Dark blue | -  | - | 10.24 |
 
-Source: https://webaim.org/resources/contrastchecker/
+Source: [WebAim contrast checker](https://webaim.org/resources/contrastchecker/)
 
 ### Accesibility considerations
 
@@ -102,9 +102,9 @@ The following are true for this colour palette:
 
 ### Tools to test colour ratios 
 
-From my research the best way to test colour ratios is the (webaim contrast checker website)[https://webaim.org/resources/contrastchecker/]
+From my research the best way to test colour ratios is the [WebAim contrast checker website](https://webaim.org/resources/contrastchecker/).
 
-For colour blindness, there is an (adobe tool)[https://color.adobe.com/create/color-accessibility] that lets you check up to five colours at a time. 
+For colour blindness, there is an [Adobe tool](https://color.adobe.com/create/color-accessibility) that lets you check up to five colours at a time. 
 This can be temperamental but it is the only tool that gives a clear pass or fail with regards to the accessibility regulations after converting colours to their colour blind equivalents.
 
 In terms of checking for how this palette works in black and white this has only been done by viewing a print preview of one of the charts. 

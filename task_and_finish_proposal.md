@@ -65,14 +65,15 @@ Colour wheel and colour blind versions:
 
 #### Focussed series
 
+Sometimes in analysis, particularly with line charts, we may want to focus on one series while dropping the rest of the information into the background. 
+These are the recommended colours for that situation. 
+
 | Series | Colour | Hex | RGB | |
 | ---- | ---- | ---- | ---- | ----| 
 | 1 | Dark blue | #12436D | | |
 | 2 | Dark grey | #919397 | | |
 
 ![](/images/focussed_series_image.png)
-
->>> I don't understand what this focused series is for?>>>
 
 #### Contrast ratios
 
@@ -121,8 +122,8 @@ In terms of checking for how this palette works in black and white this has only
 ## Next steps
 
 All to take this away and get feedback on:
-- Accessibility considerations for alternative colours  <<what does this mean?>>>
-- Example colour palette
-- Best tools to reccomend for each accessibility consideration
+- the example colour palette
+- best tools to reccomend for each accessibility consideration
+- the accessibility considerations for use when a person might choose alternative colours  
 
 We'll then work to update this according to feedback provided and aim to agree a finalised version for sharing more widely and updating the current guidance.

@@ -41,7 +41,7 @@ Example accessible palette:
 - Second series colour: Orange* #F46A25
 - Third series colour: Purple #4C2C92
 - Fourth series colour: Turquoise #28a197
-- Fifth series colour: Pink #D53800
+- Fifth series colour: Pink #D53880
 
 For some charts you may wish to focus on a single series and wash out the remaining series in a single colour.
 
@@ -54,17 +54,22 @@ All colours have a contrast ratio of at least 3:1 against white, and adjacent co
 
 Any of the colours can be used for text labels on a white background, and can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above.
 
-#### Table of contrast ratios between example colours
+#### Contrast ratios
 
-|  | White | Blue | Orange | Purple | Turqouise | Pink |
+|  | White | Dark blue | Orange | Purple | Turqouise | Pink |
 | --- | --- | --- | --- | --- | --- | ----|
-| White | - | 5.16 | 3.02 | 4.46 | 3.16 |
-| Blue | - | - | 1.7 | 1.15 | 1.63 |
-| Orange | - | - | - | 1.47 | 1.04 |
-| Purple | - | - | - | - | 1.4 |
-| Turquoise | - | - | - | - | - | ? |
+| White | - | 10.24 | 3.02 | 10.08 | 3.16 | 4.46 |
+| Dark blue | - | - | 3.38| 1.01 | 3.23 | 2.29 |
+| Orange | - | - | - | 3.32 | 1.04 | 1.47 |
+| Purple | - | - | - | - | 3.18 | 2.25 | 
+| Turquoise | - | - | - | - | - | 1.4 |
 
-Source: https://webaim.org/resources/contrastchecker/
+| | White | Dark blue | Grey |
+| ---- |---- |---- |----|
+| White | - | 3.32 | 3.07 |
+| Dark blue | -  | - | 10.24 |
+
+Source: https://webaim.org/resources/contrastchecker/s
 
 Colour blindness source: https://color.adobe.com/create/color-accessibility
 

@@ -51,16 +51,16 @@ The suggest colour palette is as follows:
 
 |  | White | Dark blue | Orange | Purple | Turqouise | Pink |
 | --- | --- | --- | --- | --- | --- | ----|
-| White | - | 5.16 | 3.02 | 4.46 | 3.16 |
-| Dark blue | - | - | 4.09 | 1.15 | 1.63 |
-| Orange | - | - | -| 1.47 | 1.04 |
-| Purple | - | - | - | - |
-| Turquoise | - | - | - | - | - |
+| White | - | 10.24 | 3.02 | 10.08 | 3.16 | 4.46 |
+| Dark blue | - | - | 3.38| 1.01 | 3.23 | 2.29 |
+| Orange | - | - | - | 3.32 | 1.04 | 1.47 |
+| Purple | - | - | - | - | 3.18 | 2.25 | 
+| Turquoise | - | - | - | - | - | 1.4 |
 
 | | White | Dark blue | Grey |
 | ---- |---- |---- |----|
-| White | - | | |
-| Dark blue | -  | - | |
+| White | - | 3.32 | 3.07 |
+| Dark blue | -  | - | 10.24 |
 
 Source: https://webaim.org/resources/contrastchecker/
 

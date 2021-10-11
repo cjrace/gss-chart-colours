@@ -33,20 +33,28 @@ We have developed an example colour palette that you can use for basic charts to
 
 This palette is based on the GDS colours - https://design-system.service.gov.uk/styles/colour/ - with a couple of variations. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly. The GDS dark blue was too close to the purple for colour blind distinction. This dark blue has also been adjusted alongside the dark grey to give 3:1 contrast between each of them, and the background.
 
-The ordering of the colours is particularly important for charts where colours will be adjacent, such as in stacked bars.
+The ordering of the colours is particularly important for charts like stacked bars where colours will be adjacent.
 
-Example accessible palette:
+### Categorical series
 
-- First series colour: Dark blue* #1d70b8
-- Second series colour: Orange* #F46A25
-- Third series colour: Purple #4C2C92
-- Fourth series colour: Turquoise #28a197
-- Fifth series colour: Pink #D53880
+| Series | Colour | Hex | RGB | |
+| ---- | ---- | ---- | ---- | ----| 
+| 1 | Dark blue* | #12436D | | |
+| 2 | Orange* | #F46A25 | | |
+| 3 | Purple | #4C2C92 | | |
+| 4 | Turqouise | #28A197 | | |
+| 5 | Pink | #D53880 | | |
 
-For some charts you may wish to focus on a single series and wash out the remaining series in a single colour.
+[insert series image]
 
-- Focus colour: Dark blue* #1d70b8
-- Remaining colour: Grey* #919397
+### Focussed series
+
+| Series | Colour | Hex | RGB | |
+| ---- | ---- | ---- | ---- | ----| 
+| 1 | Dark blue* | #12436D | | |
+| 2 | Dark grey* | #919397 | | |
+
+[insert series image]
 
 *Shade does not directly match the GDS palette.
 

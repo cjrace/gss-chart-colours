@@ -66,6 +66,8 @@ The ordering of the colours is particularly important for charts like stacked ba
 
 ![](/images/adjacent_series_image.png)
 
+The dark blue, organe and bright purple are not exact matches to the GDS palette, as mentioned. 
+
 ### Focussed series
 
 Sometimes in analysis, particularly with line charts, we may want to focus on one series while dropping the rest of the information into the background. These are the recommended colours for that situation.

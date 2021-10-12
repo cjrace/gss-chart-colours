@@ -106,7 +106,7 @@ The following are true for this colour palette:
 We think the best way to test colour ratios is the [WebAim contrast checker website](https://webaim.org/resources/contrastchecker/).
 
 For colour blindness, there is an [Adobe tool](https://color.adobe.com/create/color-accessibility) that lets you check up to five colours at a time. 
-This can be temperamental but it is the only tool that gives a clear pass or fail with regards to the accessibility regulations after converting colours to their colour blind equivalents.
+This can be temperamental but it is the only tool that gives a clear pass or fail for contrast after converting colours to their colour blind equivalents.
 
 In terms of checking for how this palette works in black and white this has only been done by viewing a print preview of one of the charts. 
 
@@ -118,6 +118,7 @@ In terms of checking for how this palette works in black and white this has only
 4. What codes do analysts use the most - Hex, RGB, CMYK, Pantone?
 5. Are there any better tools for checking colour blindness accessibility?
 6. Does anyone know of a tool that can give a clear pass or fail for whether a colour palette works in black and white?
+7. What thoughts do people have on the use of shapes to distinguish ines in a chart
 
 ## Next steps
 

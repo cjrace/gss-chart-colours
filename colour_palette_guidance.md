@@ -36,7 +36,7 @@ However, in more complex data visualisations with several colours it is not alwa
 <-- Hannah Thomas: we could also advise to use things like shapes on data points in line charts - but would be good to get people's feelings on this - I am not a fan and would be concerned that this could cause a lot of visual clutter that may make charts difficult to interpret -->
 
 ## Other success criterion to be aware of 
-Success Criterion 1.1.1 Non-text Content - this states that "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose". This criterion applies in all scenarios, except for certain situations not relevant to this gudiance. 
+Success Criterion 1.1.1 Non-text Content - this states that "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose". This criterion applies in all scenarios, except for certain situations not relevant to this guidance. 
 
 This means that all data visualisations should have a text alternative. This is often given through the "alt text attribute" which is built into the code of the webpage or document. This can be accessed by screen reader users, but other users may have trouble getting to it. This is why the Government Digital Service (GDS) do not consider it best practice to provide alternative text through the alt attribute. They state that alternative text should be in the body text of the page so that all users have easy access to it. This is what is expected when you publish on GOV.UK. 
 

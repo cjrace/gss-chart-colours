@@ -1,37 +1,57 @@
-# DRAFT: Colour palette for charts made by the Government Analysis Function
+# DRAFT: Colour palette guidance for data visualisations produced by government  
 
 ## Aims
+The aim of this guidance is to: 
 
-1. To provide members of the Government Analysis Function (AF) with an example colour palette for basic charts that is accessible. 
-2. To provide resources and guidance for analysts who wish to test their own colour palettes for accessibility.
+1. To provide a colour palette for basic charts that meets the accessibility legislation, works for the three main types of colourblindness and is distinguishable when viewed in grayscale.
+2. To give guidance and signpost to useful resources for those who wish to develop their own colour palettes for data visualisations.
 
-The AF covers everyone who produces analysis in government. 
+## Note on colour codes
+Colours are currently given in hex code. 
 
-Colours are given in hex code. RGB, CYMK and Pantone versions should also be included once the examples have been agreed upon. <!-- Cam Race: These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
+<-- Cam Race: should agree on other formats to give e.g. RGB, CYMK, Pantone -->
 
-## Note on accessibility
+## Note on accessibility legislation 
+<-- Hannah Thomas: Information given about the accessibility legislation and relevant success criterions is based on my interpretation of the legislation and the Web Content Accessibility Guidelines (WCAG) 2.1 (which the legislation aligns to). If anyone has any further knowledge of the legislation or the WCAG 2.1 success criterions we should be aware of, please let us know. --> 
 
-When designing a colour palette for charts and graphics we aim to provide colours that have enough contrast with the white background and enough contrast between adjacent colours. 
+## Accessibility legislation  
 
-This is because all content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
+[Accessibility legislation](https://www.legislation.gov.uk/uksi/2018/852/contents/made) related to content published on public sector website came into force in September 2020. 
 
-The relevant success criterion for colours in graphs is: 
+In practice this means all content published on public sector websites must legally meet all level A and level AA success criterions listed in the [Web Content Accessibility Guidelines 2.1](https://www.w3.org/TR/WCAG21).
 
->Success Criterion 1.4.11 Non-text Contrast: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
+When it comes to colours used in data visualisations, the relevant success criterion is: 
+
+>[Success Criterion 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast): The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
 >
 > ### Graphical Objects
 >
 >Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
-However, in more complex charts, it is not always possible for colours to have enough contrast with each other and with the white background. We are happy to argue that when this occurs the presentation is essential to the information being conveyed.
+### Thoughts on success criterion 1.4.11 Non-text Contrast  
 
-Colour is not the only means of distinguishing between series, and you should consider alternatives such as shapes on a line chart. All data used to build charts from should be accessible already through other means as well, e.g. as an accompanying table, or a download file that users are pointed towards. All of this combined, will help to ensure that the data is as accessible as possible.
+To make data visualisations as accessible as possible, adjacent colours should have a 3:1 contrast ratio whenever this can be done. 
+However, in more complex data visualisations with several colours it is not always possible for adjacent colours to have a 3:1 contrast with each other and with the background. When this happens it can be classed as a particular presentation, essential to the information being conveyed. Therefore, it would not fail the accessibility legislation under this success criterion. 
+
+<-- Hannah Thomas: we could also advise to use things like shapes on data points in line charts - but would be good to get people's feelings on this - I am not a fan and would be concerned that this could cause a lot of visual clutter that may make charts difficult to interpret -->
+
+## Other success criterion to be aware of 
+Success Criterion 1.1.1 Non-text Content - this states that "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose". This criterion applies in all scenarios, except for certain situations not relevant to this gudiance. 
+
+This means that all data visualisations should have a text alternative. This is often given through the "alt text attribute" which is built into the code of the webpage or document. This can be accessed by screen reader users, but other users may have trouble getting to it. This is why the Government Digital Service (GDS) do not consider it best practice to provide alternative text through the alt attribute. They state that alternative text should be in the body text of the page so that all users have easy access to it. This is what is expected when you publish on GOV.UK. 
+
+A text alternative may also be provided through supplying an accessible data table displaying the data in the visualisation. This can be done either as a HTML table on a webpage or as a downloadable file. 
 
 ## Example colour palette
 
 We have developed an example colour palette that you can use for basic charts to meet the accessibility guidelines. This assumes you are making charts on a white background.
 
-This palette is based on the GDS colours - https://design-system.service.gov.uk/styles/colour/ - with a couple of variations. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly. The GDS dark blue was too close to the purple for colour blind distinction. This dark blue has also been adjusted alongside the dark grey to give 3:1 contrast between each of them, and the background. The GDS bright purple has also been tweaked to work for colour blindness and have at least a 3:1 contrast with turquoise.
+This palette is based on the [GDS colours outlined in the GDS design system](https://design-system.service.gov.uk/styles/colour/) with a few variations:  
+1. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly
+2. The GDS dark blue has been adjusted as it was too close to the purple for colour blind distinction
+3. The GDS dark blue has also been adjusted to give 3:1 contrast with the dark grey
+4. The GDS dark grey has been adjusted to give 3:1 contrast with the dark blue and white background
+5. The GDS bright purple has also been tweaked to work for colour blindness and have at least a 3:1 contrast with the turquoise
 
 ### Example series
 
@@ -47,20 +67,28 @@ The ordering of the colours is particularly important for charts like stacked ba
 
 ![](/images/adjacent_series_image.png)
 
+The dark blue, orange and bright purple are not exact matches to the GDS palette, as mentioned. 
+
 ### Focussed series
+
+Sometimes in analysis, particularly with line charts, we may want to focus on one series while dropping the rest of the information into the background. These are the recommended colours for that situation.
 
 | Series | Colour | Hex | RGB | |
 | ---- | ---- | ---- | ---- | ----| 
-| 1 | Dark blue* | #12436D | | |
-| 2 | Dark grey* | #919397 | | |
+| 1 | Dark blue | #12436D | | |
+| 2 | Dark grey | #919397 | | |
 
 ![](/images/focussed_series_image.png)
 
-*Shade does not directly match the GDS palette.
+These shades do not directly match the GDS palette, as mentioned. 
 
-All colours have a contrast ratio of at least 3:1 against white, and adjacent colours also have a contrast ratio of 3:1 or greater. All colours pass checks for colour blindness accessibility, and appear visually distinct in black and white.
-
-Any of the colours can be used for text labels on a white background, and can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above.
+### Summary 
+* All colours have a contrast ratio of at least 3:1 against white
+* Adjacent colours also have a contrast ratio of 3:1 or greater
+* All colours pass checks for colour blindness accessibility
+* All appear visually distinct in black and white
+* All of the colours can be used for text labels on a white background
+* All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
 
 #### Contrast ratios
 
@@ -82,57 +110,57 @@ Source: https://webaim.org/resources/contrastchecker/s
 
 Colour blindness source: https://color.adobe.com/create/color-accessibility
 
-## Bar charts 
+## How to use the colour palette in charts 
 
 ### Simple bar charts
 
 For standard vertical and horizontal bar charts, use a single colour across all bars. For this we would suggest using the first series from the palette, dark blue, as this has the highest contrast ratio with a white background.
 
-[](/images/bar_gds.png)
-[needs example]
+![](/images/bar_gds.png)
 
 ### Clustered bar charts
 
 Clustered bar charts should ideally kept below 5 in a series. We recommend using the example colour palette in the order above. All bars should have white space around them to ensure a consistent 3:1 contrast ratio with adjacent colours.
 
-[](/images/grouped_bar_gds.png)
-[needs example]
+<-- Hannah Thomas: I am not sure about having white space? May need an example to see how this would look? --> 
+
+![](/images/grouped_bar_gds.png)
 
 ### Stacked bar charts
 
 Stacked bar charts present a greater challenge for accessibility as they rely heavily on colour contrast. For this reason it is important that you follow the order of the colour palette to maintain a 3:1 constrast ratio between adjacent colours.
 
-[](/images/stacked_bar_gds.png)
-[needs example]
+![](/images/stacked_bar_gds.png)
+[could have better example]
 
-## Line charts
+### Line charts
 
 Line charts should be ideally limited to 5 or fewer lines. Line charts also offer the potential for adding shapes as a distinguishing feature for data points.
+<-- Again having shapes on lines may be problematic - needs discussion --> 
 
-[needs example]
+![](/images/line_chart_gds.png)
 
 ### Line chart with a focus series
 
 If you wish to use more than 4 lines we would suggest picking a single series to focus on and putting all the others to a grey.
 
 Example colours for line chart with highlighted line: 
-- Colour for background lines: Dark grey #505a5f
-- Highlight colour for the category to focus on: Blue #1d70b8
+* Colour for background lines: Dark grey #919397
+* Highlight colour for the category to focus on: Blue #12436D
 
+[](/images/line_focussed_gds.png)
 [needs example]
 
 ## Alternative colours
 
 While we have suggested a standard palette to follow here, there may be reasons for diverging from this. The key factors to consider when building a custom palette for charts are:
 
-- Contrast ratios of at least 3:1 between adjacent colours
-- Colour blindness compatibility between colours
-- Whether it still works when converted to black and white
+* Contrast ratios of at least 3:1 between adjacent colours
+* Colour blindness compatibility between colours
+* Whether it still works when converted to black and white
 
-### Tools for assessing accessibility of chart colours
+### Tools for assessing an alternative colour palette
 
-Contrast ratios can be tested using [webaim]
-
-Colourblindnees accesibility can be tested using [adobe]
-
-Black and white versions can be created by ? and tested by ?
+* Contrast ratios can be tested using [webaim]
+* Colourblindnees accesibility can be tested using [adobe]
+* Black and white versions can be created by ? and tested by ? <-- Hannah Thomas: this information needs to be added in - does anyone know of a tool we could signpost to? --> 

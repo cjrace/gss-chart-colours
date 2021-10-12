@@ -2,37 +2,51 @@
 
 ## Background
 
-Making data visualisations accessible is important, however the relevant legislation and guidance is unclear and requires analysts to spend a lot of time doing their own research. All content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
+When creating data visualisations in government, the colour palette that is used must consider several aspects. Firstly it should meet the accessibility legislation which came into force in September 2020. Secondly it should work for people who are colourblind. Thirdly it should work when a document is printed, which means it needs to work when viewed in grayscale.  
 
-The relevant success criterion for colours in graphs is: 
+However the relevant legislation and guidance is not as clear as it could be and analysts often have to spend a lot of time doing their own research.
 
->Success Criterion 1.4.11 Non-text Contrast: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
+This is a problem we've had analysts request we address. We'd like to provide centralised advice to encourage consistency across the Government Analysis Function and prevent unnecessary duplication of work.
+
+## Considerations
+
+### Web Content Accessibility Guidelines 
+
+All content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
+
+When it comes to colours used in data visualisations, the relevant success criterion is: 
+
+>[Success Criterion 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast): The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
 >
 > ### Graphical Objects
 >
 >Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
-There is currently a lack of central guidance around building accessible charts as a statistician in government and it's a problem we've had analysts request we address. We'd like to work together to provide centralised advice to encourage consistency across the entire GSS and prevent unnecessary duplication of the same work.
+### Colourblindness
+
+The three main types of colourblindness are Deuteranopia, Protanopia and Tritanopia. The colour palette used for data visualisations should work for all these. 
+
+### Grayscale
+
+We have anecdotal evidence that suggests some users still print analytical and statistical documents and, when they do, they generally print them in black and white. This is why we should ensure data visualisations work in grayscale.  
 
 ## Aims
 
-There are two needs that we hope to satisfy:
+1. To provide members of the Government Analysis Function (AF) with a colour palette for basic charts that meets the accessibility legislation, works for people who are colourblind and works when viewed in grayscale. 
 
-1. To provide members of the Government Analysis Function (AF) with an example colour palette for basic charts that is accessible.
-
-2. To provide centralised guidance for analysts who wish to test their own colour palettes for accessibility or develop palettes for more complex scenarios than are covered in the examples.
+2. To provide centralised guidance for analysts who wish to test their own colour palettes for accessibility or develop palettes for more complex scenarios.
 
 ## Proposal
 
-To satisfy these I have prepared an update to the GSS best practice guidance that proposes an example accessible colour palette and guidance for analysts to consider accessibility and test for it when they are making their own palettes. This is based on an earlier document by Hannah Thomas. 
+We are proposing an accessible colour palette for use with basic charts, alongside guidance for analysts who wish to test for accessibility when making their own palettes. 
 
-The proposed colour palette to achieve need 1. is based on the GDS colours suggested for digital services, and are those that are used in the .gov.uk design scheme -  https://design-system.service.gov.uk/styles/colour/. This is an established and central set of colours to use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the guidelines for accessibility. These example is suggested for simplicity and ease, covering the vast majority of cases and providing a simple starting point. 
+The proposed colour palette is based on the [GDS colours suggested for digital services](https://design-system.service.gov.uk/styles/colour/). These are used in the GOV.UK design scheme. This is an established and central set of colours for use across government for digital services. Minor alterations have been made to some colours to ensure that they meet the required level of contrast for adjacent colours.  
 
-The example given suggests a series of five colours that maintain a 3:1 contrast ratio with a white background, is deemed colourblind safe and works in black and white. The contrast ratio between adjacent series is at least 3:1, though it has not be possible to develop a series where every colour has a contrast ratio of 3:1 while also being accessible for colour blindess.
+The example given suggests a series of five colours. These all have a 3:1 contrast ratio with a white background. It is deemed colourblind safe and it works in grayscale.
 
-### Colours
+When considering contrast ratios between adjacent colours, some pairings in this example do have the required contrast ratio of at least 3:1. However, it has not be possible to develop a series where every colour has a contrast ratio of 3:1 with all other colours, while also being accessible for colour blindess. 
 
-The suggest colour palette is as follows:
+### The suggested colour palette
 
 #### Categorical series
 
@@ -50,6 +64,9 @@ Colour wheel and colour blind versions:
 
 
 #### Focussed series
+
+Sometimes in analysis, particularly with line charts, we may want to focus on one series while dropping the rest of the information into the background. 
+These are the recommended colours for that situation. 
 
 | Series | Colour | Hex | RGB | |
 | ---- | ---- | ---- | ---- | ----| 
@@ -73,39 +90,40 @@ Colour wheel and colour blind versions:
 | White | - | 3.32 | 3.07 |
 | Dark blue | -  | - | 10.24 |
 
-Source: https://webaim.org/resources/contrastchecker/
+Source: [WebAim contrast checker](https://webaim.org/resources/contrastchecker/)
 
-### Accesibility considerations
+### Accessibility considerations
 
-The proposed accessibility considerations that the guidance outlines for meeting need 2. are:
+The following are true for this colour palette: 
 
     - Contrast ratio of 3:1 with white background for all colours
-    - Contrast ratio of 3:1 between adjacent colours
+    - Contrast ratio of 3:1 between some pairings
     - Works for the three main types of colour blindness (Deuteranopia, Protanopia and Tritanopia)
-    - Works in greyscale / black and white
+    - Works in greyscale/black and white
 
-### Tools
+## Tools to test colour ratios 
 
-From my research the best way to test colour ratios is the webaim site above
+We think the best way to test colour ratios is the [WebAim contrast checker website](https://webaim.org/resources/contrastchecker/).
 
-For colour blindness, there is an adobe tool - https://color.adobe.com/create/color-accessibility - that lets you check up to five colours at a time. This can be temperamental and sometimes throw a 404 after a while, though is the only tool I've found that gives a clear pass / fail by comparing contrasts after converting colours to their colour blind equivalents.
+For colour blindness, there is an [Adobe tool](https://color.adobe.com/create/color-accessibility) that lets you check up to five colours at a time. 
+This can be temperamental but it is the only tool that gives a clear pass or fail with regards to the accessibility regulations after converting colours to their colour blind equivalents.
 
-I've only checked this for black and white by viewing a print preview of one of the charts and eyeballing that. I'm assuming it's possible to come up with a formula to convert the colours and then check their contrasts like the adobe tool above, though I've not seen anyone do that yet.
+In terms of checking for how this palette works in black and white this has only been done by viewing a print preview of one of the charts. 
 
 ## Questions for the group
 
-1. Any objections to the proposal / needs we're aiming to meet?
-4. Are there any other accessibility considerations we should be highlighting in the guidance?
-2. Any objections to the proposed colours?
-3. What codes do analysts use? Hex, RGB, CMYK, Pantone?
+1. Any objections to the proposal or the needs we are aiming to meet?
+2. Are there any other accessibility considerations we should be highlighting?
+3. Any objections to the proposed colours?
+4. What codes do analysts use the most - Hex, RGB, CMYK, Pantone?
 5. Are there any better tools for checking colour blindness accessibility?
-6. Does anyone know of a tool that can give a clear pass/fail for whether a colour palette works in black and white?
+6. Does anyone know of a tool that can give a clear pass or fail for whether a colour palette works in black and white?
 
 ## Next steps
 
-Each take this away and get feedback on:
-- Accessibility considerations for alternative colours
-- Example colour palette
-- Best tools to reccomend for each accessibility consideration
+All to take this away and get feedback on:
+- the example colour palette
+- best tools to reccomend for each accessibility consideration
+- the accessibility considerations for use when a person might choose alternative colours  
 
 We'll then work to update this according to feedback provided and aim to agree a finalised version for sharing more widely and updating the current guidance.

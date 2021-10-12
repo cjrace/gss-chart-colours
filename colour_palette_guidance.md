@@ -9,10 +9,10 @@ The aim of this guidance is to:
 ## Note on colour codes
 Colours are currently given in hex code. 
 
-<-- Cam Race:  RGB, CYMK and Pantone versions should also be included once the examples have been agreed upon. These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
+<-- Cam Race: should agree on other formats to give e.g. RGB, CYMK, Pantone -->
 
 ## Note on accessibility legislation 
-<-- Hannah Thomas: Information given about the accessibility legislation and relevant success criterions is based on my interpretation of the legislation and the Web Content Accessibility Guidelines (WCAG) 2.1 (which the legislation aligns to). If anyone has any further knowledge of thelegislation or the WCAG 2.1 success criterions we should be aware of, please let us know. --> 
+<-- Hannah Thomas: Information given about the accessibility legislation and relevant success criterions is based on my interpretation of the legislation and the Web Content Accessibility Guidelines (WCAG) 2.1 (which the legislation aligns to). If anyone has any further knowledge of the legislation or the WCAG 2.1 success criterions we should be aware of, please let us know. --> 
 
 ## Accessibility legislation  
 
@@ -46,11 +46,12 @@ A text alternative may also be provided through supplying an accessible data tab
 
 We have developed an example colour palette that you can use for basic charts to meet the accessibility guidelines. This assumes you are making charts on a white background.
 
-This palette is based on the [GDS colours outlined in the GDS design system](https://design-system.service.gov.uk/styles/colour/) with a couple of variations:  
+This palette is based on the [GDS colours outlined in the GDS design system](https://design-system.service.gov.uk/styles/colour/) with a few variations:  
 1. The GDS orange did not have a 3:1 ratio against white, so this has been darkened slightly
-2. The GDS dark blue has been adjust as it was too close to the purple for colour blind distinction
-3. The GDS dark blue has also been adjusted to give 3:1 contrast with the dark grey and the background 
-4. The GDS bright purple has also been tweaked to work for colour blindness and have at least a 3:1 contrast with the turquoise.
+2. The GDS dark blue has been adjusted as it was too close to the purple for colour blind distinction
+3. The GDS dark blue has also been adjusted to give 3:1 contrast with the dark grey
+4. The GDS dark grey has been adjusted to give 3:1 contrast with the dark blue and white background
+5. The GDS bright purple has also been tweaked to work for colour blindness and have at least a 3:1 contrast with the turquoise
 
 ### Example series
 
@@ -66,7 +67,7 @@ The ordering of the colours is particularly important for charts like stacked ba
 
 ![](/images/adjacent_series_image.png)
 
-The dark blue, organe and bright purple are not exact matches to the GDS palette, as mentioned. 
+The dark blue, orange and bright purple are not exact matches to the GDS palette, as mentioned. 
 
 ### Focussed series
 
@@ -85,7 +86,7 @@ These shades do not directly match the GDS palette, as mentioned.
 * All colours have a contrast ratio of at least 3:1 against white
 * Adjacent colours also have a contrast ratio of 3:1 or greater
 * All colours pass checks for colour blindness accessibility
-* All appear visually distinct in black and white.
+* All appear visually distinct in black and white
 * All of the colours can be used for text labels on a white background
 * All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
 
@@ -115,8 +116,7 @@ Colour blindness source: https://color.adobe.com/create/color-accessibility
 
 For standard vertical and horizontal bar charts, use a single colour across all bars. For this we would suggest using the first series from the palette, dark blue, as this has the highest contrast ratio with a white background.
 
-[](/images/bar_gds.png)
-[needs example]
+![](/images/bar_gds.png)
 
 ### Clustered bar charts
 
@@ -124,31 +124,31 @@ Clustered bar charts should ideally kept below 5 in a series. We recommend using
 
 <-- Hannah Thomas: I am not sure about having white space? May need an example to see how this would look? --> 
 
-[](/images/grouped_bar_gds.png)
-[needs example]
+![](/images/grouped_bar_gds.png)
 
 ### Stacked bar charts
 
 Stacked bar charts present a greater challenge for accessibility as they rely heavily on colour contrast. For this reason it is important that you follow the order of the colour palette to maintain a 3:1 constrast ratio between adjacent colours.
 
-[](/images/stacked_bar_gds.png)
-[needs example]
+![](/images/stacked_bar_gds.png)
+[could have better example]
 
 ### Line charts
 
 Line charts should be ideally limited to 5 or fewer lines. Line charts also offer the potential for adding shapes as a distinguishing feature for data points.
 <-- Again having shapes on lines may be problematic - needs discussion --> 
 
-[needs example]
+![](/images/line_chart_gds.png)
 
 ### Line chart with a focus series
 
 If you wish to use more than 4 lines we would suggest picking a single series to focus on and putting all the others to a grey.
 
 Example colours for line chart with highlighted line: 
-* Colour for background lines: Dark grey #505a5f
-* Highlight colour for the category to focus on: Blue #1d70b8
+* Colour for background lines: Dark grey #919397
+* Highlight colour for the category to focus on: Blue #12436D
 
+[](/images/line_focussed_gds.png)
 [needs example]
 
 ## Alternative colours

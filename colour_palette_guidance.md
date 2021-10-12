@@ -1,31 +1,43 @@
-# DRAFT: Colour palette for charts made by the Government Analysis Function
+# DRAFT: Colour palette guidance for data visualisations produced by government  
 
 ## Aims
+The aim of this guidance is to: 
 
-1. To provide members of the Government Analysis Function (AF) with an example colour palette for basic charts that is accessible. 
-2. To provide resources and guidance for analysts who wish to test their own colour palettes for accessibility.
+1. To provide a colour palette for basic charts that meets the accessibility legislation, works for the three main types of colourblindness and is distinguishable when viewed in grayscale.
+2. To give guidance and signpost to useful resources for those who wish to develop their own colour palettes for data visualisations.
 
-The AF covers everyone who produces analysis in government. 
+## Note on colour codes
+Colours are currently given in hex code. 
 
-Colours are given in hex code. RGB, CYMK and Pantone versions should also be included once the examples have been agreed upon. <!-- Cam Race: These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
+<-- Cam Race:  RGB, CYMK and Pantone versions should also be included once the examples have been agreed upon. These are the different formats the DfE branding guidance gives colours in, could include an appendix or a specific section at the start outlining our recommended series of colours to pick from, with all the versions of the colours -->
 
-## Note on accessibility
+## Note on accessibility legislation 
+<-- Hannah Thomas: Information given about the accessibility legislation and relevant success criterions is based on my interpretation of the legislation and the Web Content Accessibility Guidelines (WCAG) 2.1 (which the legislation aligns to). If anyone has any further knowledge of thelegislation or the WCAG 2.1 success criterions we should be aware of, please let us know. --> 
 
-When designing a colour palette for charts and graphics we aim to provide colours that have enough contrast with the white background and enough contrast between adjacent colours. 
+## Accessibility legislation  
 
-This is because all content published on public sector websites must legally meet all the A standard and AA standard success criterions listed in the Web Content Accessibility Guidelines 2.1.
+[Accessibility legislation](https://www.legislation.gov.uk/uksi/2018/852/contents/made) related to content published on public sector website came into force in September 2020. 
 
-The relevant success criterion for colours in graphs is: 
+In practice this means all content published on public sector websites must legally meet all level A and level AA success criterions listed in the [Web Content Accessibility Guidelines 2.1](https://www.w3.org/TR/WCAG21).
 
->Success Criterion 1.4.11 Non-text Contrast: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
+When it comes to colours used in data visualisations, the relevant success criterion is: 
+
+>[Success Criterion 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast): The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent colours:
 >
 > ### Graphical Objects
 >
 >Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
 
-However, in more complex charts, it is not always possible for colours to have enough contrast with each other and with the white background. We are happy to argue that when this occurs the presentation is essential to the information being conveyed.
+### Thoughts on success criterion 1.4.11 Non-text Contrast  
 
-Colour is not the only means of distinguishing between series, and you should consider alternatives such as shapes on a line chart. All data used to build charts from should be accessible already through other means as well, e.g. as an accompanying table, or a download file that users are pointed towards. All of this combined, will help to ensure that the data is as accessible as possible.
+Our guidance is that to make data visualisations as accessible as possible, adjacent colours should have a 3:1 contrast ratio whenever this can be done. 
+However, in more complex data visualisations with several colours it is not always possible for adjacent colours to have a 3:1 contrast with each other and with the background. When this happens we would class it as a particular presentation, essential to the information being conveyed. Therefore, it would not fail the accessibility legislation under this success criterion. 
+
+<-- Hannah Thomas: we could also advise to use things like shapes on data points in line charts - but would be good to get people's feelings on this - I am not a fan and would be concerned that this could cause a lot of visual clutter that may make charts difficult to interpret -->
+
+## Other success criterion to be aware of 
+
+All data used to build charts from should be accessible already through other means as well, e.g. as an accompanying table, or a download file that users are pointed towards. All of this combined, will help to ensure that the data is as accessible as possible.
 
 ## Example colour palette
 

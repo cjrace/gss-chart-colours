@@ -184,4 +184,10 @@ While we have suggested a standard palette to follow here, there may be reasons 
 
 * Contrast ratios can be tested using [webaim]
 * Colourblindnees accesibility can be tested using [adobe]
-* Black and white versions can be created by ? and tested by ? <-- Hannah Thomas: this information needs to be added in - does anyone know of a tool we could signpost to? --> 
+* Black and white versions can be created by creating a print preview of the chart/palette and then selecting grayscale. You can then eyeball this to check for ease of distinction between adjacent colours.
+
+For R users:
+
+* The coloratio package can be used to check contrast ratios - https://github.com/matt-dray/coloratio
+* The colorblindcheck package can be used to visualise the colours in the 3 main forms of colourblindness - https://github.com/Nowosad/colorblindcheck
+* The ColToGrey function from the DescTools package can convert colours to grayscale - https://github.com/cran/DescTools

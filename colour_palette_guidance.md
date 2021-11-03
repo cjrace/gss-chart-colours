@@ -182,8 +182,8 @@ While we have suggested a standard palette to follow here, there may be reasons 
 
 ### Tools for assessing an alternative colour palette
 
-* Contrast ratios can be tested using [webaim]
-* Colourblindnees accesibility can be tested using [adobe]
+* Contrast ratios can be tested using [webaim contrast checker](https://webaim.org/resources/contrastchecker/)
+* Colourblindnees accesibility can be tested using [adobe colour accessibility tool](https://color.adobe.com/create/color-accessibility)
 * Black and white versions can be created by creating a print preview of the chart/palette and then selecting grayscale. You can then eyeball this to check for ease of distinction between adjacent colours.
 
 For R users:

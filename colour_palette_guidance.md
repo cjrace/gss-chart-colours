@@ -29,27 +29,29 @@ However, in more complex data visualisations with several colours it is not alwa
 
 >Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
 
-To make data visualisations as accessible as possible, we should aim to make charts interpretable regardless of colour.
+To make data visualisations as accessible as possible, we should aim to make charts interpretable regardless of colour. This means labelling lines directly, and being careful with the ordering of legends for stacked and clustered bar charts so that users can still infer the labels for the series without relying soley on the colours.
 
 ### [Success Criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content)
 
 >All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. 
 
-This criterion applies in all scenarios, except for certain situations not relevant to this guidance. 
+This criterion applies in all scenarios, except for certain situations not relevant to this guidance. This means that all data visualisations should have a text alternative. 
 
-This means that all data visualisations should have a text alternative. This is often given through the "alt text attribute" which is built into the code of the webpage or document. This can be accessed by screen reader users, but other users may have trouble getting to it. This is why the Government Digital Service (GDS) do not consider it best practice to provide alternative text through the alt attribute. They state that alternative text should be in the body text of the page so that all users have easy access to it. This is what is expected when you publish on GOV.UK. 
+This is often given through the "alt text attribute" which is built into the code of the webpage or document. This can be accessed by screen reader users, but other users may have trouble getting to it. This is why the Government Digital Service (GDS) do not consider it best practice to provide alternative text through the alt attribute. They state that alternative text should be in the body text of the page so that all users have easy access to it. This is what is expected when you publish on GOV.UK. 
 
 A text alternative may also be provided through supplying an accessible data table displaying the data in the visualisation. This can be done either as a HTML table on a webpage or as a downloadable file. 
 
 ## Chart text and labels
 
-Be a sans serif font and at least size 12. Serif fonts don’t fail regs but they are known to be difficult to read, the British dyslexia association [recommends you don’t use serif fonts](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
+All chart text and labels should be in a sans serif font and at least size 12. Serif fonts don’t automatically fail the accessibility legislation but they are known to be difficult to read; the British dyslexia association [recommends you don’t use serif fonts](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
 
-When labelling a series on a chart the labels should be near to the series they relate to, as opposed to in a key. Line labels should in black text, as opposed to coloured text.
+If you are saving your visualisation as an image, be aware that any manipulation of the image size will affect the text, and while the text may originally have been size 12 or higher, there's a risk it may decrease below this if you reduce the size of the image.
 
-If you do use coloured text, you should consider [Success Criterion 1.4.3 Contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum): the visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for large scale text. 
+When labelling a series on a chart the labels should be near to the series they relate to, as opposed to in a key. Where a key or legend is used you should ensure that the ordering matches the ordering of the series in the chart. Text labels should generally be in black text.
 
-Large scale text is defined as 18 point and over, or 14 point and over if bold. 
+If you do use coloured text, you should consider [Success Criterion 1.4.3 Contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum), which states that the visual presentation of text and images of text should have a contrast ratio of at least 4.5:1.
+
+
 
 ## Example colour palette
 
@@ -66,7 +68,7 @@ This palette is based on the [GDS colours outlined in the GDS design system](htt
 
 The ordering of the colours is particularly important for charts like stacked bars where colours will be adjacent. This example ensures that neighbouring series maintain a contrast ratio of 3:1 and are accessible with colour blindness.
 
-| Series | Colour | Hex | RGB | |
+| Series | Colour | Hex | RGB | CYMK |
 | ---- | ---- | ---- | ---- | ----| 
 | 1 | Dark blue* | #12436D | | |
 | 2 | Orange* | #F46A25 | | |
@@ -74,30 +76,38 @@ The ordering of the colours is particularly important for charts like stacked ba
 | 4 | Turquoise | #28A197 | | |
 | 5 | Purple | #4C2C92 | | |
 
-![](/images/adjacent_series_image.png)
+![](/images/categorical_series_image.png)
+![](/images/categorical_series_greyscale.png)
 
 The dark blue, orange and bright purple are not exact matches to the GDS palette, as mentioned.
 
 ### Sequential series
 
-| Series | Colour | Hex | RGB | |
+| Series | Colour | Hex | RGB | CYMK |
 | ---- | ---- | ---- | ---- | ----| 
-| 1 | Dark blue* | #12436D | | |
-| 2 | Orange* | #F46A25 | | |
-| 3 | Bright purple* | #801650 | | |
-| 4 | Turquoise | #28A197 | | |
-| 5 | Purple | #4C2C92 | | |
+| 1 | Dark blue | #12436D | | |
+| 2 | Mid blue | #2073BC | | |
+| 3 | Light blue | #6BACE6 | | |
+
+![](/images/sequential_series_colourblind.png)
+![](/images/sequential_series_greyscale.png)
+
+
+As this is limited to tints of a single colour, this series does not have the 3:1 contrast ratios to meet 1.4.11, therefore it is particularly important that you make any charts using this colour palette accessible and interpretable through means other than colour, meeting 1.4.1 and 1.1.1. 
+
 
 ### Focussed series
 
 Sometimes in analysis, particularly with line charts, we may want to focus on one series while dropping the rest of the information into the background. These are the recommended colours for that situation.
 
-| Series | Colour | Hex | RGB | |
+| Series | Colour | Hex | RGB | CYMK |
 | ---- | ---- | ---- | ---- | ----| 
 | 1 | Dark blue | #12436D | | |
 | 2 | Dark grey | #919397 | | |
 
 ![](/images/focussed_series_image.png)
+![](/images/focussed_series_greyscale.png)
+
 
 These shades do not directly match the GDS palette, as mentioned. 
 
@@ -105,7 +115,7 @@ These shades do not directly match the GDS palette, as mentioned.
 * All colours have a contrast ratio of at least 3:1 against white
 * Adjacent colours also have a contrast ratio of 3:1 or greater
 * All colours pass checks for colour blindness accessibility
-* All appear visually distinct in black and white
+* All adjacent colours appear visually distinct in black and white
 * All of the colours can be used for text labels on a white background
 * All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
 
@@ -118,6 +128,12 @@ These shades do not directly match the GDS palette, as mentioned.
 | Orange | - | - | - | 3.22 |  1.04 | 3.32 |
 | Bright purple | - | - | -| -| 3.08 | 1.04 |
 | Turquoise | - | - | - | - | - | 3.08 |
+
+|  | White | Dark blue | Mid blue | Light blue |
+| --- | --- | --- | --- | --- |
+| White | - | 10.24 | 4.95 | 2.42 |
+| Dark blue | - | - | 2.06 | 4.22 |
+| Mid blue | - | - | - | 2.04 |
 
 
 | | White | Dark blue | Grey |
@@ -150,6 +166,10 @@ For the legend in a clustered bar chart, it is important to ensure that the orde
 Stacked bar charts present a greater challenge for accessibility as they can rely heavily on colour contrast. For this reason it is important that you follow the order of the colour palette to maintain a 3:1 constrast ratio between adjacent colours.
 
 For the legend in a stacked bar chart, it is important to ensure that the ordering of the legend matches the order of the series in the stacked bar so that users don't have to rely on colour to match the labels to the series.
+
+https://style.ons.gov.uk/category/data-visualisation/titles-and-text/#line-styles
+
+https://style.ons.gov.uk/category/data-visualisation/chart-design/#number-of-lines-per-chart
 
 ![](/images/stacked_bar_gds.png)
 [could have better example]

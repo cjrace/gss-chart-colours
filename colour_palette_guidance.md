@@ -79,7 +79,17 @@ The ordering of the colours is particularly important for charts like stacked ba
 ![](/images/categorical_series_image.png)
 ![](/images/categorical_series_greyscale.png)
 
+[can make these more attractive for final version]
+
 The dark blue, orange and bright purple are not exact matches to the GDS palette, as mentioned.
+
+### Summary 
+* All colours have a contrast ratio of at least 3:1 against white
+* Adjacent colours also have a contrast ratio of 3:1 or greater
+* All colours pass checks for colour blindness accessibility
+* All adjacent colours appear visually distinct in black and white
+* All of the colours can be used for text labels on a white background
+* All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
 
 ### Sequential series
 
@@ -91,6 +101,8 @@ The dark blue, orange and bright purple are not exact matches to the GDS palette
 
 ![](/images/sequential_series_colourblind.png)
 ![](/images/sequential_series_greyscale.png)
+
+[can make these more attractive for final version]
 
 
 As this is limited to tints of a single colour, this series does not have the 3:1 contrast ratios to meet 1.4.11, therefore it is particularly important that you make any charts using this colour palette accessible and interpretable through means other than colour, meeting 1.4.1 and 1.1.1. 
@@ -108,16 +120,12 @@ Sometimes in analysis, particularly with line charts, we may want to focus on on
 ![](/images/focussed_series_image.png)
 ![](/images/focussed_series_greyscale.png)
 
+[can make these more attractive for final version]
+
 
 These shades do not directly match the GDS palette, as mentioned. 
 
-### Summary 
-* All colours have a contrast ratio of at least 3:1 against white
-* Adjacent colours also have a contrast ratio of 3:1 or greater
-* All colours pass checks for colour blindness accessibility
-* All adjacent colours appear visually distinct in black and white
-* All of the colours can be used for text labels on a white background
-* All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
+
 
 #### Contrast ratios
 
@@ -161,18 +169,16 @@ For the legend in a clustered bar chart, it is important to ensure that the orde
 
 ![](/images/grouped_bar_gds.png)
 
+[should make better example, dropping 5th series and improving legend]
+
 ### Stacked bar charts
 
 Stacked bar charts present a greater challenge for accessibility as they can rely heavily on colour contrast. For this reason it is important that you follow the order of the colour palette to maintain a 3:1 constrast ratio between adjacent colours.
 
 For the legend in a stacked bar chart, it is important to ensure that the ordering of the legend matches the order of the series in the stacked bar so that users don't have to rely on colour to match the labels to the series.
 
-https://style.ons.gov.uk/category/data-visualisation/titles-and-text/#line-styles
-
-https://style.ons.gov.uk/category/data-visualisation/chart-design/#number-of-lines-per-chart
-
 ![](/images/stacked_bar_gds.png)
-[could have better example]
+[could have better example with legend going horizontally like in https://style.ons.gov.uk/category/data-visualisation/titles-and-text/#long-category-names]
 
 ### Line charts
 
@@ -211,3 +217,12 @@ For R users:
 * The coloratio package can be used to check contrast ratios - https://github.com/matt-dray/coloratio
 * The colorblindcheck package can be used to visualise the colours in the 3 main forms of colourblindness - https://github.com/Nowosad/colorblindcheck
 * The ColToGrey function from the DescTools package can convert colours to grayscale - https://github.com/cran/DescTools
+
+----
+
+All of the above to be weaved in and linking to best practice from the ONS data vis guidance 
+
+https://style.ons.gov.uk/category/data-visualisation/titles-and-text/#line-styles
+
+https://style.ons.gov.uk/category/data-visualisation/chart-design/#number-of-lines-per-chart
+

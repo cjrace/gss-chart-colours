@@ -23,7 +23,7 @@ When it comes to colours used in data visualisations, the relevant success crite
 
 To make data visualisations as accessible as possible, adjacent colours should have a 3:1 contrast ratio whenever this can be done. 
 
-However, in more complex data visualisations with several colours it is not always possible for adjacent colours to have a 3:1 contrast with each other and with the background. When this happens it can be classed as a particular presentation, essential to the information being conveyed. Therefore, it would not fail the accessibility legislation under this success criterion. 
+In more complex data visualisations with several colours it is not always possible for adjacent colours to have a 3:1 contrast with each other and with the background. When this happens, and the chart has a clear need to be more complex, we believe it can be classed as a particular presentation, essential to the information being conveyed. In this scenario, you should ensure that you are making your chart accessible in other ways, by avoiding reliance on colour alone and giving text alternatives.
 
 ### [Success Criterion 1.4.1 Use of Color](https://www.w3.org/TR/WCAG21/#use-of-color)
 
@@ -43,7 +43,7 @@ A text alternative may also be provided through supplying an accessible data tab
 
 ## Chart text and labels
 
-All chart text and labels should be in a sans serif font and at least size 12. Serif fonts don’t automatically fail the accessibility legislation but they are known to be difficult to read; the British dyslexia association [recommends you don’t use serif fonts](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
+All chart text and labels should be in a sans serif font and at least size 12. Avoid using Serif fonts, while they don’t automatically fail the accessibility legislation, they are known to be difficult to read; the British dyslexia association [recommends you don’t use serif fonts](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
 
 If you are saving your visualisation as an image, be aware that any manipulation of the image size will affect the text, and while the text may originally have been size 12 or higher, there's a risk it may decrease below this if you reduce the size of the image.
 
@@ -89,7 +89,7 @@ The dark blue, orange and bright purple are not exact matches to the GDS palette
 * All colours pass checks for colour blindness accessibility
 * All adjacent colours appear visually distinct in black and white
 * All of the colours can be used for text labels on a white background
-* All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above
+* All can be labelled on using white text providing the text is 18pt and above, or 14pt bold and above, in line with [WCAG](https://www.w3.org/TR/WCAG21/#contrast-minimum)
 
 ### Sequential series
 

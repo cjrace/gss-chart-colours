@@ -20,6 +20,8 @@ People with colour vision deficiency find it difficult to identify and distingui
 
 Adobe's [colour accessibility tool](https://color.adobe.com/create/color-accessibility) gives a pass/fail indication for series of up to five colours, as well as visualising where they sit in a colour wheel.
 
+The [davidmathlogic site](https://davidmathlogic.com/colorblind/), gives an immediate visualisation of colour palettes into the main types of colourblindess.
+
 Coblis, [colour blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) allows you to upload an image and then visually check that against the most common types of colourblindess.
 
 If you're using R, you can use the [colorblindcheck](https://github.com/Nowosad/colorblindcheck) package to visualise colours from a series.

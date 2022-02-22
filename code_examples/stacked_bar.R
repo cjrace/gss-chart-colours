@@ -1,1 +1,0 @@
-# Example code to create stacked bar

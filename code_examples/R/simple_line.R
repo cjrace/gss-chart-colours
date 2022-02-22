@@ -35,3 +35,5 @@ fig %>%
   )
 
 # Finally, in the viewer pane click on the camera to download plot
+
+# For more customisation options in plotly go to https://plotly.com/ggplot2/line-charts/

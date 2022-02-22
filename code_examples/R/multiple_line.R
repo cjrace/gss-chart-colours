@@ -57,9 +57,7 @@ fig %>%
   config(
     toImageButtonOptions = list(
       format = "svg",
-      filename = "multiple_line",
-      width = 1920,
-      height = 1080
+      filename = "multiple_line"
     )
   )
 

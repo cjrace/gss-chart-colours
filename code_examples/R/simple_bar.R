@@ -28,9 +28,7 @@ fig %>%
   config(
     toImageButtonOptions = list(
       format = "svg",
-      filename = "simple_bar",
-      width = 1920,
-      height = 1080
+      filename = "simple_bar"
     )
   )
 
